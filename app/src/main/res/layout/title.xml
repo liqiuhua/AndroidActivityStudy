@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#0084ff">
+<Button
+    android:id="@+id/titleBack"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:text="Back"
+    android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/tetleText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        android:text="@string/app_name"
+        />
+    <Button
+        android:id="@+id/titleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:text="Edit"/>
+</LinearLayout>

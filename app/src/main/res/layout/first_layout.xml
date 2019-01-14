@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title"/>
+
+    <EditText
+        android:id="@+id/inputData"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="Please input data"
+        android:maxLines="2"/>
+
+    <Button
+        android:id="@+id/gotoSecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第二界面"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/gotoThreeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第三界面"/>
+    <Button
+        android:id="@+id/gotFourActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第四界面"/>
+
+
+
+</LinearLayout>
