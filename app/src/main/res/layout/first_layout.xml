@@ -32,7 +32,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="第四界面"/>
-
+    <Button
+        android:id="@+id/gotFiveActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第五界面"/>
 
 
 </LinearLayout>

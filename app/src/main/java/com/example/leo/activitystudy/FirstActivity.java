@@ -55,6 +55,14 @@ public class FirstActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button gotoFiveActivity = (Button)findViewById(R.id.gotFiveActivity);
+        gotoFiveActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(FirstActivity.this,FiveActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
