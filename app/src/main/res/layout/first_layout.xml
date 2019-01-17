@@ -37,6 +37,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="第五界面"/>
+    <Button
+        android:id="@+id/gotoSixActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第六界面"/>
+    <Button
+        android:id="@+id/gotoSevenActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第七界面"/>
 
+    <Button
+        android:id="@+id/gotoTestActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test界面"/>
 
 </LinearLayout>

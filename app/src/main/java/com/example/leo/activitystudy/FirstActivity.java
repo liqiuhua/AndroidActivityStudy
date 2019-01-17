@@ -63,6 +63,29 @@ public class FirstActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+        Button gotoSixActivity = (Button)findViewById(R.id.gotoSixActivity);
+        gotoSixActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(FirstActivity.this,SixActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button gotoSevenActivity = (Button)findViewById(R.id.gotoSevenActivity);
+        gotoSevenActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(FirstActivity.this,SevenActivity.class);
+                startActivity(intent);
+            }
+        });
+        Button gotoTestActivity = (Button)findViewById(R.id.gotoTestActivity);
+        gotoTestActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NewsContentActivity.actionStart(FirstActivity.this,"hello ","world");
+            }
+        });
     }
 
     @Override
