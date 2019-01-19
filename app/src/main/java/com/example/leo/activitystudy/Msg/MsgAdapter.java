@@ -1,4 +1,4 @@
-package com.example.leo.activitystudy;
+package com.example.leo.activitystudy.Msg;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,10 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.support.v7.recyclerview.*;
-import android.support.v7.widget.RecyclerView.Adapter;
 
-import org.w3c.dom.Text;
+import com.example.leo.activitystudy.Msg.Msg;
+import com.example.leo.activitystudy.R;
 
 import java.util.List;
 

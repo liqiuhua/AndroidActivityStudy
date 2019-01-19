@@ -1,4 +1,4 @@
-package com.example.leo.activitystudy;
+package com.example.leo.activitystudy.TelephoneBook;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.leo.activitystudy.R;
 
 import java.util.List;
 

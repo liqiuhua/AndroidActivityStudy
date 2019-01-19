@@ -1,4 +1,4 @@
-package com.example.leo.activitystudy;
+package com.example.leo.activitystudy.TelephoneBook;
 
 public class TelephoneBook {
     private String Name;
