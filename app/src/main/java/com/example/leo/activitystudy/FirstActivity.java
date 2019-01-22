@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.leo.activitystudy.Login.LoginActivity;
+
 public class FirstActivity extends BaseActivity implements View.OnClickListener {
 
     private EditText editText;
@@ -30,6 +32,7 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
         ((Button)findViewById(R.id.gotoSevenActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoTestActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoBroadcastActivity)).setOnClickListener(this);
+        ((Button)findViewById(R.id.gotoLoginActivity)).setOnClickListener(this);
     //    ((Button)findViewById(R.id.gotoThreeActivity)).setOnClickListener(this);
 
     }
@@ -78,6 +81,10 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
                 break;
             case R.id.gotoTestActivity:
                 intent= new Intent(FirstActivity.this,BroadcastActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.gotoLoginActivity:
+                intent= new Intent(FirstActivity.this, LoginActivity.class);
                 startActivity(intent);
                 break;
                 default:break;
