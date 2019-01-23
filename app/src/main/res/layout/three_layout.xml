@@ -1,17 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ThreeActivity">
     <com.example.leo.activitystudy.TitleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerThree"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
-</android.support.constraint.ConstraintLayout>
+        android:layout_height="wrap_content"
+        android:text="please input phone number :"
+        android:paddingTop="20dp"
+        android:textSize="24dp"/>
+    <EditText
+        android:id="@+id/editTextPhoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:hint="please input phone number"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <Button
+            android:id="@+id/pbtnCallPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0f0"
+            android:padding="20dp"
+            android:text="Call"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <Button
+            android:id="@+id/pbtnReturnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f00"
+            android:padding="20dp"
+            android:text="Return Call"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
