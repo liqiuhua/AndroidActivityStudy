@@ -2,7 +2,6 @@ package com.example.leo.activitystudy;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.leo.activitystudy.Login.LoginActivity;
+import com.example.leo.activitystudy.Media.MediaActivity;
+import com.example.leo.activitystudy.TelephoneBook.TelphoneBookActivity;
 
 public class FirstActivity extends BaseActivity implements View.OnClickListener {
 
@@ -25,15 +26,16 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
 
         editText = (EditText) findViewById(R.id.inputData);
         gotoSecondActivity.setOnClickListener(this);
+        ((Button)findViewById(R.id.titleBack)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoThreeActivity)).setOnClickListener(this);
-        ((Button)findViewById(R.id.gotFourActivity)).setOnClickListener(this);
+        ((Button)findViewById(R.id.gotoTelphoneBookActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotFiveActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoSixActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoSevenActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoTestActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoBroadcastActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoLoginActivity)).setOnClickListener(this);
-    //    ((Button)findViewById(R.id.gotoThreeActivity)).setOnClickListener(this);
+        ((Button)findViewById(R.id.gotoMediaActivity)).setOnClickListener(this);
 
     }
 
@@ -41,6 +43,10 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId())
         {
+            case R.id.titleBack:
+                Toast.makeText(this,"Close APP",Toast.LENGTH_SHORT).show();
+                ActivityCollector.finishAll();
+                break;
             case R.id.gotoSecondActivity:
                 String Data = "Hello SecondActivity";
                 /*活动间传递数据方法一
@@ -59,8 +65,8 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
                 intent= new Intent(FirstActivity.this,ThreeActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.gotFourActivity:
-                intent= new Intent(FirstActivity.this,FourActivity.class);
+            case R.id.gotoTelphoneBookActivity:
+                intent= new Intent(FirstActivity.this, TelphoneBookActivity.class);
                 startActivity(intent);
                 break;
             case R.id.gotFiveActivity:
@@ -85,6 +91,10 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
                 break;
             case R.id.gotoLoginActivity:
                 intent= new Intent(FirstActivity.this, LoginActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.gotoMediaActivity:
+                intent= new Intent(FirstActivity.this, MediaActivity.class);
                 startActivity(intent);
                 break;
                 default:break;

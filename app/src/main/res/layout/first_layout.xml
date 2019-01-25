@@ -26,12 +26,12 @@
         android:id="@+id/gotoThreeActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="第三界面"/>
+        android:text="第三界面 打电话"/>
     <Button
-        android:id="@+id/gotFourActivity"
+        android:id="@+id/gotoTelphoneBookActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="第四界面"/>
+        android:text="第四界面 电话本"/>
     <Button
         android:id="@+id/gotFiveActivity"
         android:layout_width="match_parent"
@@ -58,15 +58,15 @@
         android:layout_height="wrap_content"
         android:text="Login界面"/>
     <Button
-        android:id="@+id/gotoContentResolverActivity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Content Resolver"/>
-    <Button
         android:id="@+id/gotoMediaActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Media"/>
+        android:text="Media "/>
+    <Button
+        android:id="@+id/gotoNetworkActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Network"/>
 
 
     <Button

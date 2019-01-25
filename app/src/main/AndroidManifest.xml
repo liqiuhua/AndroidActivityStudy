@@ -3,7 +3,9 @@
     package="com.example.leo.activitystudy">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login.MainLoginActivity"></activity>
+
+        <provider
+            android:authorities="com.example.leo.activitystudy.fileProvider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+        <activity android:name=".Media.MediaActivity"></activity>
+        <activity android:name=".Login.MainLoginActivity" />
         <activity android:name=".Login.LoginActivity" />
         <activity android:name=".BroadcastActivity" />
         <activity android:name=".NewsContentActivity" />
@@ -26,7 +39,7 @@
         </activity>
         <activity android:name=".SecondActivity" />
         <activity android:name=".ThreeActivity" />
-        <activity android:name=".FourActivity" />
+        <activity android:name=".TelephoneBook.TelphoneBookActivity" />
         <activity android:name=".FiveActivity" />
     </application>
 

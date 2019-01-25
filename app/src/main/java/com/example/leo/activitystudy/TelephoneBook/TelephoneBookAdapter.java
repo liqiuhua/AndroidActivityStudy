@@ -27,7 +27,7 @@ public class TelephoneBookAdapter extends ArrayAdapter<TelephoneBook> {
         View view;
         RecyclerView.ViewHolder viewHolder;
         if(convertView==null) {
-            view = LayoutInflater.from(getContext()).inflate(resourceImgId, parent, false);
+            view = LayoutInflater.from(getContext()).inflate((int) resourceImgId, parent, false);
          //   viewHolder = new RecyclerView.ViewHolder();
         }
         else{

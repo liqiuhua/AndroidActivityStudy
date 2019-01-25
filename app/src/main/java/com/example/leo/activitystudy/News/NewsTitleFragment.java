@@ -1,23 +1,16 @@
 package com.example.leo.activitystudy.News;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.AndroidException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.leo.activitystudy.ActivityCollector;
-import com.example.leo.activitystudy.FirstActivity;
-import com.example.leo.activitystudy.FourActivity;
 import com.example.leo.activitystudy.NewsContentActivity;
 import com.example.leo.activitystudy.R;
 

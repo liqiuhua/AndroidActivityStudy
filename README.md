@@ -6,5 +6,8 @@ my Android Activity study example
 第四界面      ：是ListView的示例  
 第五界面      ：是RecyclerView的示例，做了一个类似聊天界面的示例  
 第六界面      ：是Fragment的示例  
-第七界面      ：是RecyclerView+Fragment的示例，做了一个类似新闻浏览的界面  
-Test界面      ：是用于测试的界面  
+第七界面      ：是RecyclerView+Fragment的示例，做了一个类似新闻浏览的界面
+BROADCAST界面 ：接收广播示例，接收网络变化的广播
+LOGIN界面     ：模仿登入界面，记住密码，强制下线功能
+MEDIA界面     ：多媒体应用界面
+Test界面      ：是用于测试的界面
