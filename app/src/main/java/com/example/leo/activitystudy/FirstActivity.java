@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.leo.activitystudy.Login.LoginActivity;
 import com.example.leo.activitystudy.Media.MediaActivity;
+import com.example.leo.activitystudy.Network.NetworkActivity;
 import com.example.leo.activitystudy.TelephoneBook.TelphoneBookActivity;
 
 public class FirstActivity extends BaseActivity implements View.OnClickListener {
@@ -36,6 +37,7 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
         ((Button)findViewById(R.id.gotoBroadcastActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoLoginActivity)).setOnClickListener(this);
         ((Button)findViewById(R.id.gotoMediaActivity)).setOnClickListener(this);
+        ((Button)findViewById(R.id.gotoNetworkActivity)).setOnClickListener(this);
 
     }
 
@@ -95,6 +97,10 @@ public class FirstActivity extends BaseActivity implements View.OnClickListener 
                 break;
             case R.id.gotoMediaActivity:
                 intent= new Intent(FirstActivity.this, MediaActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.gotoNetworkActivity:
+                intent= new Intent(FirstActivity.this, NetworkActivity.class);
                 startActivity(intent);
                 break;
                 default:break;

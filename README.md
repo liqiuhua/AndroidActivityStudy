@@ -10,4 +10,5 @@ my Android Activity study example
 BROADCAST界面 ：接收广播示例，接收网络变化的广播
 LOGIN界面     ：模仿登入界面，记住密码，强制下线功能
 MEDIA界面     ：多媒体应用界面
+NETWORK界面   ：实现了一些网络功能，http，web
 Test界面      ：是用于测试的界面
